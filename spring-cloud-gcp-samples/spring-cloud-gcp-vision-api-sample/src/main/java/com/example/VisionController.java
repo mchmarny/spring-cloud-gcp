@@ -80,7 +80,7 @@ public class VisionController {
 
 		StringBuilder responseBuilder = new StringBuilder("<table border=\"1\">");
 
-		responseBuilder.append("<tr><th>label</th><th>score</th></tr>");
+		responseBuilder.append("<tr><th>label</th><th>score</th><th>confidence</th></tr>");
 
 		// We're only expecting one response.
 		if (responses.getResponsesCount() == 1) {
@@ -95,6 +95,8 @@ public class VisionController {
 						.append(annotation.getDescription())
 						.append("</td><td>")
 						.append(annotation.getScore())
+						.append("</td><td>")
+						.append(annotation.getConfidence())
 						.append("</td></tr>");
 			}
 		}
