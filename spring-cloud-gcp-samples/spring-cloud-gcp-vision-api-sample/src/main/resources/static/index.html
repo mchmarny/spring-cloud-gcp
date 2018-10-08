@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Google Cloud Vision API using Spring on Knative</title>
@@ -9,9 +10,11 @@
             font-family: 'DejaVu Sans', sans-serif;
             margin: 30px 50px;
         }
+
         b {
             font-size: 1.2em;
         }
+
         input[type=text] {
             padding: 2px 3px 1px !important;
             width: 650px;
@@ -20,12 +23,13 @@
             border: 1px solid #666;
             vertical-align: bottom;
         }
+
         #footer {
             font-size: 1em;
             margin-top: 50px;
         }
-        .button
-        {
+
+        .button {
             padding: 10px 15px 11px !important;
             font-size: 1em !important;
             background-color: #666;
@@ -43,23 +47,25 @@
         }
     </style>
 </head>
+
 <body>
-<div>
-    <h1>Google Cloud Vision API on Knative in demo</h1>
-    <form action="/vision">
-        <b>Image URL:</b><br />
-        <input type="text" id="imageUrl" name="imageUrl"/>
-        <input type="submit" value="Ok" class="button" />
-    </form>
-    <p>
-        <a href="https://i.ytimg.com/vi/tussa6KKCZU/maxresdefault.jpg">Sample</a>
-    </p>
-    <div id="footer">
-        More GCP APIs with Spring integration demos at:<br/>
-        <a href="https://github.com/spring-cloud/spring-cloud-gcp">
-            github.com/spring-cloud/spring-cloud-gcp
-        </a>
+    <div>
+        <h1>Google Cloud Vision API on Knative Demo</h1>
+        <form action="/vision">
+            <b>Image URL:</b><br />
+            <input type="text" id="imageUrl" name="imageUrl" />
+            <input type="submit" value="Ok" class="button" />
+        </form>
+        <p>
+            <a href="https://i.ytimg.com/vi/tussa6KKCZU/maxresdefault.jpg">Sample</a>
+        </p>
+        <div id="footer">
+            More GCP APIs with Spring integration demos at:<br />
+            <a href="https://github.com/spring-cloud/spring-cloud-gcp">
+                github.com/spring-cloud/spring-cloud-gcp
+            </a>
+        </div>
     </div>
-</div>
 </body>
+
 </html>
